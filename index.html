@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a la Plataforma de Biodiversidad</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="fauna.html">Fauna</a></li>
+                <li><a href="flora.html">Flora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduccion">
+            <h2>Explora la Biodiversidad</h2>
+            <p>Esta plataforma te permite conocer más sobre la biodiversidad de nuestra región, desde fauna hasta flora.</p>
+        </section>
+
+        <section class="categorias">
+            <!-- Categoría Fauna -->
+            <div class="categoria" onclick="window.location.href='fauna.html'">
+                <div class="categoria-imagen-container">
+                    <img src="imagenes/fauna.jpg" alt="Fauna" class="categoria-imagen">
+                </div>
+                <h3>Fauna</h3>
+                <p>Conoce los animales que habitan nuestro ecosistema.</p>
+            </div>
+
+            <!-- Categoría Flora -->
+            <div class="categoria" onclick="window.location.href='flora.html'">
+                <div class="categoria-imagen-container">
+                    <img src="imagenes/flora.jpg" alt="Flora" class="categoria-imagen">
+                </div>
+                <h3>Flora</h3>
+                <p>Descubre las especies vegetales que enriquecen nuestro entorno.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plataforma de Biodiversidad / Diana Georgette Palacios Chavez</p>
+    </footer>
+</body>
+</html>
+

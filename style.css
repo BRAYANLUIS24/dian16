@@ -1,0 +1,183 @@
+/* Variables de color */
+:root {
+    --color-principal: #6dbf57;
+    --color-secundario: #3e8e41;
+    --color-card: #f9f9f9;
+    --color-text: #333;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.introduccion {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.categoria, .subcategoria-card {
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.categoria:hover, .subcategoria-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: var(--color-principal);
+    color: var(--color-card);
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.categorias ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.categorias ul li {
+    background-color: #ccffcc; /* Color verde claro */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px; /* Ajusta el tamaño según prefieras */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.categorias ul li a {
+    text-decoration: none;
+    color: #0f0f0f;
+    font-weight: bold;
+}
+/* Estilo general para las imágenes */
+img {
+    width: 300px;        /* Establece el ancho de las imágenes */
+    height: 200px;       /* Establece la altura de las imágenes */
+    object-fit: cover;   /* Asegura que la imagen se recorte si es necesario para ajustarse al tamaño */
+    border-radius: 8px;  /* Esquinas redondeadas para un estilo más suave */
+}
+
+/* Estilo para los contenedores de las tarjetas de seres vivos */
+.seres-card {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    width: 320px;        /* Tamaño consistente para las tarjetas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para las tarjetas */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Estilo para las secciones de la página */
+section.introduccion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #0d0d0d;
+}
+
+/* Estilo de los enlaces del menú */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #070707;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #008cdd;
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #777;
+}
+/* Estilo de las imágenes dentro de las categorías */
+.categoria-imagen-container {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.categoria-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
